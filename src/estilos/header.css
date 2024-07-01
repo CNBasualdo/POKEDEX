@@ -1,0 +1,19 @@
+.navbar{
+    
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+}
+.PokeLogo{
+    height:90px;   
+}
+.form-control{
+    height: 40px;
+    width: 600px;
+}

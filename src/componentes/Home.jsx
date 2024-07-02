@@ -1,34 +1,33 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../estilos/home.css';
 import Header from './Header';
 import axios from 'axios';
 import {URL_POKEMON} from '../api/apiRest'
-
-
-
+import Card from './Card';
 
 
 export default function Home() {
-
-  useEffect(() =>{
-
+  const [arrayPokemon, setArrayPokemon] = useState([]);
+  
+  useEffect(()=> {
     const api = async () =>{
       const apiPoke = await axios.get(`${URL_POKEMON}`)
-      console.log(apiPoke.data);
-    } 
+
+      setArrayPokemon(apiPoke.data.results);
+    }; 
 
       api()
-
-
-
-  }, [])
-
-
-
-
+  }, []);
 
 
   return (
-    <Header/>
+    <div>
+      <Header/>
+      <div>
+        {arrayPokemon.map((card, index) =>{
+          return <Card  key={index} card={card} />
+        })}
+    </div>
+  </div>
   )
 }

@@ -51,14 +51,14 @@ export default function Card({card}) {
             <div >
                 {itemPokemon ?.stats?.map((sta, index) =>{
                 return (
-                    <p className='stats' key={index}>
+                    <div className='stats' key={index}>
                         <span>{sta.stat.name}</span>
                         <span>{sta.base_stat}</span>
-                    </p>
+                    </div>
                 );
                 })}
             </div>
         </div>
     </div>
-  )
+    )
 }

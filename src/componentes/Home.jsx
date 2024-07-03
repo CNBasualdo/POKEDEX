@@ -23,6 +23,10 @@ export default function Home() {
   return (
     <div>
       <Header/>
+      <div className='decoracion'>
+        <button></button>
+        
+      </div>
       <div className='Tarjetero'>
         {arrayPokemon.map((card, index) =>{
           return <Card  key={index} card={card} />

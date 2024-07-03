@@ -26,10 +26,17 @@
     margin: 0 auto;
 }
 .card-body{
-   width: 100%;
-   border: 3px solid; 
+    width: 100%;
+    border: 3px solid; 
 } 
 .stats{
+    background-color: red;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+}
+
+.stats span{
+    margin-left: 10px;
+    margin-right: 10px;
 }

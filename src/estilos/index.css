@@ -3,4 +3,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+
+/*Colores de tipo*/
+
+.bg-green{
+    background: green;
+}
+.bg-red{
+    background: red;
+}
+.bg-blue{
+    background: blue;
+}
+.bg-yellow{
+    background: yellow;
+}
+.bg-brown{
+    background: brown;
+}
+.bg-purple{
+    background: purple;
+}
+.bg-black{
+    background: black;
+}
+.bg-pink{
+    background: pink;
+}
+.bg-gray{
+    background: gray;
 }

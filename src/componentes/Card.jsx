@@ -38,10 +38,6 @@ export default function Card({card}) {
         <img className='card-img-top' src={itemPokemon ?.sprites ?.other["official-artwork"].front_default} alt="pokemon"/>
     </div>
         <div className='card-body'>
-
-
-
-
             <div className='pokeInfo'>
                 <div className='tipo'>
                     {itemPokemon?.types?.map((ti, index) => {
@@ -52,25 +48,13 @@ export default function Card({card}) {
                         );
                     })}    
                 </div>
-                <h3 className='card-text'>001</h3>
+                <h3 className='card-text'>#{itemPokemon.id}</h3>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <h5 className='card-title'>Name</h5>
+            <h5 className='card-title'> {itemPokemon.name} </h5>
             <div className='list-group list-group-flush'>
-                <h6 className='list-group-item'>altura</h6>
-                <h6 className='list-group-item'>peso</h6>
-                <h6 className='list-group-item'>habitad</h6>
+                <h6 className='list-group-item'>Altura: {itemPokemon.height}0 Cm</h6>
+                <h6 className='list-group-item'>Peso: {itemPokemon.weight} kg</h6>
+                <h6 className='list-group-item'>Habitat: {especiePokemon?.habitat?.name}</h6>
             </div>
             <div >
                 {itemPokemon ?.stats?.map((sta, index) =>{

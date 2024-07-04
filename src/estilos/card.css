@@ -12,14 +12,26 @@
     background-color: skyblue;
     border: 5px solid;
 }
+
+
 .pokeInfo{
     display: flex;
     justify-content: space-between;
 }
+.tipo{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .botonTipo{
-    width: 30px;
-    height: 30px;
+    display: flex;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 .card-img-top{
     width: 160px;

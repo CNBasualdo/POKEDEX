@@ -9,30 +9,58 @@
 
 /*Colores de tipo*/
 
-.bg-green{
+.color-bug{
     background: green;
 }
-.bg-red{
-    background: red;
-}
-.bg-blue{
-    background: blue;
-}
-.bg-yellow{
-    background: yellow;
-}
-.bg-brown{
-    background: brown;
-}
-.bg-purple{
-    background: purple;
-}
-.bg-black{
+.color-dark{
     background: black;
 }
-.bg-pink{
-    background: pink;
+.color-dragon{
+    background:rgb(24, 133, 177);
 }
-.bg-gray{
-    background: gray;
+.color-electric{
+    background: yellow;
 }
+.color-fairy{
+    background: rgb(223, 70, 95);
+}
+.color-fighting{
+    background: orange;
+}
+.color-fire{
+    background: red;
+}
+.color-flying{
+    background: rgb(167, 166, 166);
+}
+.color-ghost{
+    background: rgba(87, 13, 87, 0.822);
+}
+.color-grass{
+    background-color: green;
+}
+.color-ground{
+    background-color: rgba(153, 54, 54, 0.822);
+}
+.color-ice{
+    background-color: rgb(3, 180, 250);
+}
+.color-normal{
+    background-color: rgb(173, 129, 137);
+}
+.color-poison{
+    background-color: blueviolet;
+}
+.color-psychic{
+    background-color: rgba(207, 30, 30, 0.479);
+}
+.color-rock{
+    background-color: brown;
+}
+.color-steel{
+    background-color: grey;
+}
+.color-water{
+    background-color: skyblue;
+}
+

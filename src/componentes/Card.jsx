@@ -38,10 +38,34 @@ export default function Card({card}) {
         <img className='card-img-top' src={itemPokemon ?.sprites ?.other["official-artwork"].front_default} alt="pokemon"/>
     </div>
         <div className='card-body'>
+
+
+
+
             <div className='pokeInfo'>
-                <button className={`bg-${especiePokemon ?.color ?.name} botonTipo `} ></button>
+                <div className='tipo'>
+                    {itemPokemon?.types?.map((ti, index) => {
+                        return( 
+                        <p key={index} className={`color-${ti.type.name} botonTipo`}> 
+                            {ti.type.name}
+                        </p>
+                        );
+                    })}    
+                </div>
                 <h3 className='card-text'>001</h3>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
             <h5 className='card-title'>Name</h5>
             <div className='list-group list-group-flush'>
                 <h6 className='list-group-item'>altura</h6>

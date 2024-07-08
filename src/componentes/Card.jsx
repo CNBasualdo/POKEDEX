@@ -29,7 +29,14 @@ export default function Card({card}) {
         dataEspecie()
     }, []);
 
-    console.log(especiePokemon ?.color ?.name);
+
+
+    let pokeId = itemPokemon?.id?.toString();
+    if (pokeId?.length == 1){
+        pokeId = "00" + pokeId;
+    } else if (pokeId?.length == 2){
+        pokeId == "0" + pokeId;
+    }
 
 
   return (
@@ -48,7 +55,7 @@ export default function Card({card}) {
                         );
                     })}    
                 </div>
-                <h3 className='card-text'>#{itemPokemon.id}</h3>
+                <h3 className='card-text'>#{pokeId}</h3>
             </div>
             <h5 className='card-title'> {itemPokemon.name} </h5>
             <div className='list-group list-group-flush'>
